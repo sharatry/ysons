@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YSONS | Industrial Instrumentation & Process Automation</title>
+    <title>YSONS | Instrumentation, Automation & Packaging</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
 
     <div class="bg-slate-900 text-slate-400 text-sm py-2 px-6 flex justify-between items-center hidden md:flex">
         <div><i class="fa-solid fa-location-dot text-cyan-500 mr-2"></i> Bengaluru, Karnataka, India</div>
@@ -15,110 +15,60 @@
     </div>
 
     <header class="bg-white shadow-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
-        <div class="text-3xl font-black tracking-wider text-slate-900">Y<span class="text-cyan-600">SONS</span></div>
+        <a href="index.html" class="text-3xl font-black tracking-wider text-slate-900">Y<span class="text-cyan-600">SONS</span></a>
         <nav class="hidden md:flex space-x-8 font-semibold text-slate-600">
-            <a href="#" class="hover:text-cyan-600 transition">Home</a>
-            <a href="#about" class="hover:text-cyan-600 transition">About Us</a>
-            <a href="#products" class="hover:text-cyan-600 transition">Products</a>
-            <a href="#industries" class="hover:text-cyan-600 transition">Industries</a>
-            <a href="#contact" class="hover:text-cyan-600 transition">Contact</a>
+            <a href="index.html" class="text-cyan-600 transition">Home</a>
+            <a href="about.html" class="hover:text-cyan-600 transition">About Us</a>
+            <a href="services.html" class="hover:text-cyan-600 transition">Products & Services</a>
+            <a href="contact.html" class="hover:text-cyan-600 transition">Contact</a>
         </nav>
-        <a href="#contact" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded font-medium shadow transition">Get a Quote</a>
+        <a href="contact.html" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded font-medium shadow transition">Get a Quote</a>
     </header>
 
-    <section class="relative bg-slate-900 text-white py-24 px-6 md:px-12 flex flex-col justify-center items-start overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#0891b2_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="relative max-w-3xl z-10">
-            <span class="text-cyan-500 uppercase tracking-widest font-bold text-sm block mb-2">Engineering Excellence</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">High-Precision Process Control & Sensors</h1>
-            <p class="text-lg text-slate-300 mb-8 leading-relaxed">YSONS engineers and manufactures state-of-the-art thermal elements, calibration instrumentation, and automation components tailored strictly for rigorous industrial applications.</p>
-            <div class="flex flex-wrap gap-4">
-                <a href="#products" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded shadow transition">Explore Catalog</a>
-                <a href="#about" class="border border-slate-500 hover:border-white text-white font-semibold px-6 py-3 rounded transition">Our Infrastructure</a>
+    <main class="flex-grow">
+        <section class="relative bg-slate-900 text-white py-24 px-6 md:px-12 flex flex-col justify-center items-start overflow-hidden">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#0891b2_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="relative max-w-3xl z-10">
+                <span class="text-cyan-500 uppercase tracking-widest font-bold text-sm block mb-2">End-to-End Industrial Solutions</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Instrumentation, Automation & Advanced Packaging</h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed">Your trusted partner for high-precision process control, equipment sales, technical consultation, maintenance services, and industrial packaging solutions.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="services.html" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded shadow transition">Explore Services</a>
+                    <a href="contact.html" class="border border-slate-500 hover:border-white text-white font-semibold px-6 py-3 rounded transition">Consult with an Expert</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="products" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-slate-900 mb-4">Industrial Solutions Portfolio</h2>
-            <div class="w-16 h-1 bg-cyan-600 mx-auto"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition p-6 flex flex-col justify-between">
-                <div>
-                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 text-xl mb-4"><i class="fa-solid fa-temperature-high"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Industrial Thermocouples</h3>
-                    <p class="text-sm text-slate-600 mb-4">Heavy-duty Type K, J, N, R, S sensors designed with advanced MOC (Inconel 600, SS316) for extreme thermal environments.</p>
-                    <table class="w-full text-xs text-left text-slate-500 border-t border-slate-100 pt-2">
-                        <tr><td class="py-1 font-semibold">Range:</td><td class="py-1">-200°C to 1600°C</td></tr>
-                        <tr><td class="py-1 font-semibold">Accuracy:</td><td class="py-1">Class 1 / Special Limits</td></tr>
-                    </table>
-                </div>
-                <a href="#contact" class="mt-6 border border-cyan-600 text-cyan-600 hover:bg-cyan-600 hover:text-white text-center text-sm font-semibold py-2 rounded transition">Request Specs</a>
+        <section class="py-16 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+            <div class="p-6">
+                <i class="fa-solid fa-cart-flatbed text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Equipment Sales</h3>
+                <p class="text-sm text-slate-600">Premium sensors, transmitters, and control systems for rigorous applications.</p>
             </div>
-
-            <div class="bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition p-6 flex flex-col justify-between">
-                <div>
-                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 text-xl mb-4"><i class="fa-solid fa-gauge"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">RTD Assemblies (Pt100)</h3>
-                    <p class="text-sm text-slate-600 mb-4">Precision 3-wire and 4-wire Duplex RTD sensors providing ultra-stable, linear resistance profiles for high-accuracy process tracking.</p>
-                    <table class="w-full text-xs text-left text-slate-500 border-t border-slate-100 pt-2">
-                        <tr><td class="py-1 font-semibold">Element:</td><td class="py-1">Thin Film / Wire Wound</td></tr>
-                        <tr><td class="py-1 font-semibold">Standard:</td><td class="py-1">IEC 60751 Class A</td></tr>
-                    </table>
-                </div>
-                <a href="#contact" class="mt-6 border border-cyan-600 text-cyan-600 hover:bg-cyan-600 hover:text-white text-center text-sm font-semibold py-2 rounded transition">Request Specs</a>
+            <div class="p-6">
+                <i class="fa-solid fa-screwdriver-wrench text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Service & Calibration</h3>
+                <p class="text-sm text-slate-600">On-site maintenance, repair, and precision calibration of industrial instruments.</p>
             </div>
-
-            <div class="bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition p-6 flex flex-col justify-between">
-                <div>
-                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 text-xl mb-4"><i class="fa-solid fa-microchip"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Smart Signal Transmitters</h3>
-                    <p class="text-sm text-slate-600 mb-4">Head-mount and DIN-rail configurable transmitters with 4-20mA analog loop outputs and integrated HART communication protocols.</p>
-                    <table class="w-full text-xs text-left text-slate-500 border-t border-slate-100 pt-2">
-                        <tr><td class="py-1 font-semibold">Input:</td><td class="py-1">Universal (RTD / TC)</td></tr>
-                        <tr><td class="py-1 font-semibold">Isolation:</td><td class="py-1">2.0 kV AC galvanic</td></tr>
-                    </table>
-                </div>
-                <a href="#contact" class="mt-6 border border-cyan-600 text-cyan-600 hover:bg-cyan-600 hover:text-white text-center text-sm font-semibold py-2 rounded transition">Request Specs</a>
+            <div class="p-6">
+                <i class="fa-solid fa-user-tie text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Expert Consultation</h3>
+                <p class="text-sm text-slate-600">System design, automation workflows, and process optimization consulting.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-slate-900 text-white px-6">
-        <div class="max-w-3xl mx-auto bg-slate-800 rounded-xl p-8 shadow-xl border border-slate-700">
-            <h3 class="text-2xl font-bold text-center mb-2">Request an Industrial Quotation</h3>
-            <p class="text-slate-400 text-sm text-center mb-8">Submit your specific electrical or physical requirements and our technical sales team will revert with a formal commercial offer.</p>
-            
-            <form action="#" method="POST" class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-xs uppercase font-bold text-slate-400 mb-2">Company Name</label>
-                        <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded px-4 py-3 focus:outline-none focus:border-cyan-500 text-white transition">
-                    </div>
-                    <div>
-                        <label class="block text-xs uppercase font-bold text-slate-400 mb-2">Contact Email</label>
-                        <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded px-4 py-3 focus:outline-none focus:border-cyan-500 text-white transition">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs uppercase font-bold text-slate-400 mb-2">Target Product Line / Specification Parameters</label>
-                    <textarea rows="4" required placeholder="e.g., Duplex Pt100, 6mm Sheath Diameter, 300mm length, SS316..." class="w-full bg-slate-900 border border-slate-700 rounded px-4 py-3 focus:outline-none focus:border-cyan-500 text-white transition"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded transition shadow">Dispatch Technical Request</button>
-            </form>
-        </div>
-    </section>
+            <div class="p-6">
+                <i class="fa-solid fa-box-open text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Industrial Packaging</h3>
+                <p class="text-sm text-slate-600">Secure, custom packaging solutions ensuring safe transit of sensitive equipment.</p>
+            </div>
+        </section>
+    </main>
 
     <footer class="bg-slate-950 text-slate-500 text-xs py-8 px-6 text-center border-t border-slate-900">
         <p>&copy; 2026 YSONS Instrumentation. All Rights Reserved.</p>
     </footer>
 
-    <a href="https://wa.me/910000000000?text=Hi%20YSONS,%20I%20am%20interested%20in%20requesting%20a%20quote%20for%20sensors." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-xl z-50 transition transform hover:scale-110">
+    <a href="https://wa.me/910000000000?text=Hi%20YSONS,%20I%20am%20interested%20in%20your%20services." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-xl z-50 transition transform hover:scale-110">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-
 </body>
 </html>
