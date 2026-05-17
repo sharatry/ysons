@@ -3,50 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YSONS | Industrial Instrumentation & Process Automation</title>
+    <title>YSONS | Instrumentation, Automation & Packaging</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
 
     <div class="bg-slate-900 text-slate-400 text-sm py-2 px-6 flex justify-between items-center hidden md:flex">
         <div><i class="fa-solid fa-location-dot text-cyan-500 mr-2"></i> Bengaluru, Karnataka, India</div>
-        <div class="flex space-x-6">
-            <div><i class="fa-solid fa-user-tie text-cyan-500 mr-2"></i> POC: Brijesh Yadav</div>
-            <div><i class="fa-solid fa-envelope text-cyan-500 mr-2"></i> info@ysons.in</div>
-        </div>
+        <div><i class="fa-solid fa-envelope text-cyan-500 mr-2"></i> info@ysons.in</div>
     </div>
 
     <header class="bg-white shadow-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
-        <div class="text-3xl font-black tracking-wider text-slate-900">Y<span class="text-cyan-600">SONS</span></div>
+        <a href="index.html" class="text-3xl font-black tracking-wider text-slate-900">Y<span class="text-cyan-600">SONS</span></a>
         <nav class="hidden md:flex space-x-8 font-semibold text-slate-600">
-            <a href="#" class="hover:text-cyan-600 transition">Home</a>
-            <a href="#about" class="hover:text-cyan-600 transition">About Us</a>
-            <a href="#products" class="hover:text-cyan-600 transition">Products</a>
-            <a href="#industries" class="hover:text-cyan-600 transition">Industries</a>
-            <a href="#contact" class="hover:text-cyan-600 transition">Contact</a>
+            <a href="index.html" class="text-cyan-600 transition">Home</a>
+            <a href="about.html" class="hover:text-cyan-600 transition">About Us</a>
+            <a href="services.html" class="hover:text-cyan-600 transition">Products & Services</a>
+            <a href="contact.html" class="hover:text-cyan-600 transition">Contact</a>
         </nav>
-        <a href="#contact" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded font-medium shadow transition">Get a Quote</a>
+        <a href="contact.html" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded font-medium shadow transition">Get a Quote</a>
     </header>
 
-    <section class="relative bg-slate-900 text-white py-24 px-6 md:px-12 flex flex-col justify-center items-start overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#0891b2_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="relative max-w-3xl z-10">
-            <span class="text-cyan-500 uppercase tracking-widest font-bold text-sm block mb-2">Engineering Excellence</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">High-Precision Process Control & Sensors</h1>
-            <p class="text-lg text-slate-300 mb-8 leading-relaxed">YSONS engineers and manufactures state-of-the-art thermal elements, calibration instrumentation, and automation components tailored strictly for rigorous industrial applications.</p>
-            <div class="flex flex-wrap gap-4">
-                <a href="#products" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded shadow transition">Explore Catalog</a>
-                <a href="#about" class="border border-slate-500 hover:border-white text-white font-semibold px-6 py-3 rounded transition">Our Infrastructure</a>
+    <main class="flex-grow">
+        <section class="relative bg-slate-900 text-white py-24 px-6 md:px-12 flex flex-col justify-center items-start overflow-hidden">
+            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#0891b2_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="relative max-w-3xl z-10">
+                <span class="text-cyan-500 uppercase tracking-widest font-bold text-sm block mb-2">End-to-End Industrial Solutions</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Instrumentation, Automation & Advanced Packaging</h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed">Your trusted partner for high-precision process control, equipment sales, technical consultation, maintenance services, and industrial packaging solutions.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="services.html" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded shadow transition">Explore Services</a>
+                    <a href="contact.html" class="border border-slate-500 hover:border-white text-white font-semibold px-6 py-3 rounded transition">Consult with an Expert</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="products" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-slate-900 mb-4">Industrial Solutions Portfolio</h2>
-            <div class="w-16 h-1 bg-cyan-600 mx-auto"></div>
-        </div>
+        <section class="py-16 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+            <div class="p-6">
+                <i class="fa-solid fa-cart-flatbed text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Equipment Sales</h3>
+                <p class="text-sm text-slate-600">Premium sensors, transmitters, and control systems for rigorous applications.</p>
+            </div>
+            <div class="p-6">
+                <i class="fa-solid fa-screwdriver-wrench text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Service & Calibration</h3>
+                <p class="text-sm text-slate-600">On-site maintenance, repair, and precision calibration of industrial instruments.</p>
+            </div>
+            <div class="p-6">
+                <i class="fa-solid fa-user-tie text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Expert Consultation</h3>
+                <p class="text-sm text-slate-600">System design, automation workflows, and process optimization consulting.</p>
+            </div>
+            <div class="p-6">
+                <i class="fa-solid fa-box-open text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Industrial Packaging</h3>
+                <p class="text-sm text-slate-600">Secure, custom packaging solutions ensuring safe transit of sensitive equipment.</p>
+            </div>
+        </section>
+    </main>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition p-6 flex flex
+    <footer class="bg-slate-950 text-slate-500 text-xs py-8 px-6 text-center border-t border-slate-900">
+        <p>&copy; 2026 YSONS Instrumentation. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/919876543210?text=Hi%20YSONS,%20I%20am%20interested%20in%20your%20services." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-xl z-50 transition transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>
