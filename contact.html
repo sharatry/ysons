@@ -3,83 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | YSONS</title>
+    <title>Contact Us | YSONS Technologies</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
 
     <div class="bg-slate-900 text-slate-400 text-sm py-2 px-6 flex justify-between items-center hidden md:flex">
-        <div><i class="fa-solid fa-location-dot text-cyan-500 mr-2"></i> Bengaluru, Karnataka, India</div>
+        <div><i class="fa-solid fa-location-dot text-cyan-500 mr-2"></i> Bharuch, Gujarat, India</div>
         <div><i class="fa-solid fa-envelope text-cyan-500 mr-2"></i> info@ysons.in</div>
     </div>
 
     <header class="bg-white shadow-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
         <a href="index.html" class="text-3xl font-black tracking-wider text-slate-900">Y<span class="text-cyan-600">SONS</span></a>
-        <nav class="hidden md:flex space-x-8 font-semibold text-slate-600">
+        <nav class="hidden md:flex space-x-8 font-semibold text-slate-600 items-center">
             <a href="index.html" class="hover:text-cyan-600 transition">Home</a>
-            <a href="about.html" class="hover:text-cyan-600 transition">About Us</a>
-            <a href="services.html" class="hover:text-cyan-600 transition">Products & Services</a>
-            <a href="contact.html" class="text-cyan-600 transition">Contact</a>
+            <a href="about.html" class="hover:text-cyan-600 transition">About</a>
+            <a href="services.html" class="hover:text-cyan-600 transition">Services</a>
+            <a href="contact.html" class="text-cyan-600 border-b-2 border-cyan-600 pb-1 transition">Contact</a>
         </nav>
-        <a href="contact.html" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded font-medium shadow transition">Get a Quote</a>
+        <div class="flex items-center">
+            <button id="mobile-menu-btn" class="md:hidden text-slate-900 text-2xl focus:outline-none ml-4">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <main class="flex-grow flex items-center justify-center bg-slate-900 py-20 px-6">
-        <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-slate-800 rounded-xl shadow-2xl overflow-hidden border border-slate-700">
+    <div id="mobile-nav" class="hidden bg-white shadow-lg w-full flex-col p-6 absolute top-[72px] left-0 z-40 space-y-4 font-semibold text-slate-600">
+        <a href="index.html" class="hover:text-cyan-600 block">Home</a>
+        <a href="about.html" class="hover:text-cyan-600 block">About</a>
+        <a href="services.html" class="hover:text-cyan-600 block">Services</a>
+        <a href="contact.html" class="text-cyan-600 block">Contact</a>
+    </div>
+
+    <main class="flex-grow py-16 px-6 max-w-6xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">Let's Discuss Your Process</h1>
+            <p class="text-slate-600 max-w-2xl mx-auto">Reach out for technical consultations, equipment inquiries, or service requests.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white p-8 md:p-12 rounded-xl shadow-sm border border-slate-200">
             
-            <div class="p-10 bg-slate-800 text-white flex flex-col justify-center">
-                <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
-                <p class="text-slate-400 text-sm mb-8">Whether you need a commercial quote, technical consultation, or service request, our team is ready to assist.</p>
+            <div class="bg-slate-900 text-slate-300 p-8 rounded-lg">
+                <h3 class="text-2xl font-bold text-white mb-8">Contact Information</h3>
                 
                 <div class="space-y-6">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 bg-cyan-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Brijesh Yadav</h4>
+                            <p class="text-cyan-500 text-sm">Director – Technical</p>
+                        </div>
+                    </div>
+                    
                     <div class="flex items-start">
                         <i class="fa-solid fa-location-dot text-cyan-500 text-xl w-8 mt-1"></i>
                         <div>
-                            <h4 class="font-bold text-sm">Headquarters</h4>
-                            <p class="text-slate-400 text-sm">Bengaluru, Karnataka, India</p>
+                            <h4 class="font-bold text-sm text-white">Headquarters</h4>
+                            <p class="text-slate-400 text-sm">Bharuch, Gujarat - 392001, India</p>
                         </div>
                     </div>
-                    <div class="flex items-start">
+                    <div class="flex items-start cursor-pointer hover:text-cyan-400 transition" onclick="navigator.clipboard.writeText('info@ysons.in'); alert('Email copied!');">
                         <i class="fa-solid fa-envelope text-cyan-500 text-xl w-8 mt-1"></i>
                         <div>
-                            <h4 class="font-bold text-sm">Email Us</h4>
+                            <h4 class="font-bold text-sm text-white">Email Address</h4>
                             <p class="text-slate-400 text-sm">info@ysons.in</p>
                         </div>
                     </div>
-                    <div class="flex items-start">
+                    <div class="flex items-start cursor-pointer hover:text-cyan-400 transition" onclick="navigator.clipboard.writeText('+917383268371'); alert('Phone number copied!');">
                         <i class="fa-brands fa-whatsapp text-cyan-500 text-xl w-8 mt-1"></i>
                         <div>
-                            <h4 class="font-bold text-sm">WhatsApp</h4>
-                            <p class="text-slate-400 text-sm">+91 9876 543210</p>
+                            <h4 class="font-bold text-sm text-white">Phone / WhatsApp</h4>
+                            <p class="text-slate-400 text-sm">+91 73832 68371</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="p-10 bg-white">
-                <h3 class="text-2xl font-bold text-slate-900 mb-6">Request a Quote</h3>
-                <form action="https://formspree.io/f/mblrvnzq" method="POST" class="space-y-4">
-                    <div>
-                        <label class="block text-xs uppercase font-bold text-slate-500 mb-1">Company / Name</label>
-                        <input type="text" required class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition">
+            <div>
+                <form id="contact-form" action="https://formspree.io/f/your_form_id_here" method="POST" class="space-y-6">
+                    <div id="form-message" class="hidden p-4 rounded text-sm font-semibold mb-4"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-500 mb-1">First Name</label>
+                            <input type="text" name="firstName" required class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-bold text-slate-500 mb-1">Last Name</label>
+                            <input type="text" name="lastName" required class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition text-sm">
+                        </div>
                     </div>
                     <div>
                         <label class="block text-xs uppercase font-bold text-slate-500 mb-1">Email Address</label>
-                        <input type="email" required class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition">
+                        <input type="email" name="email" required class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition text-sm">
                     </div>
                     <div>
                         <label class="block text-xs uppercase font-bold text-slate-500 mb-1">Nature of Inquiry</label>
-                        <select class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition text-sm">
-                            <option>Equipment Sales</option>
-                            <option>Service & Calibration</option>
-                            <option>Technical Consultation</option>
-                            <option>Packaging Solutions</option>
+                        <select name="inquiryType" class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition text-sm">
+                            <option>Equipment & Instrumentation Sales</option>
+                            <option>Automation Solutions</option>
+                            <option>Calibration & Services</option>
+                            <option>Safety & Reliability Consultation</option>
                         </select>
                     </div>
                     <div>
                         <label class="block text-xs uppercase font-bold text-slate-500 mb-1">Details</label>
-                        <textarea rows="4" required placeholder="Tell us about your requirements..." class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition"></textarea>
+                        <textarea name="message" rows="4" required placeholder="Tell us about your requirements..." class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2 focus:outline-none focus:border-cyan-500 transition"></textarea>
                     </div>
                     <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded transition shadow">Send Message</button>
                 </form>
@@ -89,7 +120,42 @@
     </main>
 
     <footer class="bg-slate-950 text-slate-500 text-xs py-8 px-6 text-center border-t border-slate-900 mt-auto">
-        <p>&copy; 2026 YSONS Instrumentation. All Rights Reserved.</p>
+        <p>&copy; 2026 YSONS Technologies. All Rights Reserved. | Your Process. Our Priority.</p>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-nav').classList.toggle('hidden');
+            document.getElementById('mobile-nav').classList.toggle('flex');
+        });
+
+        // Seamless AJAX Form Submission
+        const form = document.getElementById('contact-form');
+        const msgDiv = document.getElementById('form-message');
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const data = new FormData(form);
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    msgDiv.className = 'p-4 rounded text-sm font-semibold mb-4 bg-emerald-100 text-emerald-800 block';
+                    msgDiv.innerHTML = 'Thank you! We will get back to you shortly.';
+                    form.reset();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            } catch (error) {
+                // If you don't have a valid Formspree link yet, this handles the test click gracefully
+                msgDiv.className = 'p-4 rounded text-sm font-semibold mb-4 bg-amber-100 text-amber-800 block';
+                msgDiv.innerHTML = 'Note: Form submission requires a valid form action URL to work live.';
+            }
+        });
+    </script>
 </body>
 </html>
